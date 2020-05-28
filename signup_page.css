@@ -1,0 +1,40 @@
+.signup_inputType{
+	padding: 16px;
+	font-family: sans-serif;
+}
+input[type=Email], input[type=password]{
+	display: inline-block;
+	width: 100%;
+	padding: 16px;
+	margin: 8px 0;
+}
+.btnClass::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	opacity: 0.9;
+}
+.CancelBtn, .signupButton{
+	float: left;
+	width: 50%;
+}
+.CancelBtn{
+	background-color: #f44336;
+}
+button:hover{
+	opacity: 1;
+}
+@media screen and (max-width: 300px){
+	.CancelBtn, .signupButton{
+		width: 100%;
+	}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Transitition Property
+            </title>
+            <style>
+                div{
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    animation-name: example;
+                    animation-duration: 10s;
+                    position: relative;
+                    animation-iteration-count: infinite;
+                    animation-direction: reverse;
+                    transition: width 2s;
+                }
+                @keyframes example{
+                    0% {background-color: red; left: 0px;top: 0px;}
+                    25%{background-color: blue;left: 200px;top: 200px;}
+                    50%{background-color: yellow;left: 0px;top: 200px;}
+                    75%{background-color: green;left: 200px;top: 0px;}
+                    100%{background-color: red;left: 0px;top: 0px;}
+                }
+                div:hover{
+                    width: 300px;
+                }
+                .pagiation{
+                    display: inline-block;
+                }
+                .pagiation a:hover:not(.active){
+                    background-color:#ddd;
+                }
+                .pagiation a.active{
+                    background-color: #4CAF50;
+                    color: white;
+                }
+            </style>
+        </head>
+        <body>
+            <div>
+                
+            </div>
+            <div1 class = "pagiation">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div1>
+        </body>
+    </html>
